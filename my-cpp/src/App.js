@@ -1,4 +1,5 @@
 import React from 'react'
+import Clock from './Clock'
 
 class App extends React.Component{
 
@@ -28,6 +29,8 @@ class App extends React.Component{
       <div>
         <h1>Hello World!</h1>
         <h2>It is {this.state.date}.</h2>
+        <hr />
+        <Clock />
       </div>
     )
     return (ele2)
