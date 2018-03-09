@@ -3,6 +3,8 @@ import Welcome from './Welcome'
 import Comment from './Comment'
 import Clock from './Clock'
 
+import Toggle from './controls/Toggle'
+
 class App extends React.Component{
 
   constructor(props){
@@ -38,6 +40,7 @@ class App extends React.Component{
         <Comment />
         <hr />
         <Clock />
+        <Toggle />
       </div>
     )
 
