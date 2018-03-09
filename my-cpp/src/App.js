@@ -1,6 +1,7 @@
 import React from 'react'
 import Welcome from './Welcome'
 import Comment from './Comment'
+import Clock from './Clock'
 
 class App extends React.Component{
 
@@ -35,6 +36,8 @@ class App extends React.Component{
         <Welcome name="Cahal"/>
         <Welcome name="Edite"/>
         <Comment />
+        <hr />
+        <Clock />
       </div>
     )
 
