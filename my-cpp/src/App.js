@@ -1,4 +1,6 @@
 import React from 'react'
+import Welcome from './Welcome'
+import Comment from './Comment'
 
 class App extends React.Component{
 
@@ -15,6 +17,7 @@ class App extends React.Component{
       });
     },1000)
   }
+
   componentDidMount(){
     console.log('id='+this.intervalId)
   }
@@ -28,8 +31,13 @@ class App extends React.Component{
       <div>
         <h1>Hello World!</h1>
         <h2>It is {this.state.date}.</h2>
+        <Welcome name="Mike"/>
+        <Welcome name="Cahal"/>
+        <Welcome name="Edite"/>
+        <Comment />
       </div>
     )
+
     return (ele2)
   }
 }
