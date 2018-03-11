@@ -10,7 +10,9 @@ class Toggle extends React.Component {
       .handleClick
       .bind(this)
   }
+  
   render() {
+    // debugger;
     return (
       <button onClick={this.handleClick}>
         {this.state.isToggleOn
