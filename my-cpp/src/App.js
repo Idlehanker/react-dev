@@ -4,6 +4,8 @@ import Comment from './Comment'
 import Clock from './Clock'
 
 import Toggle from './controls/Toggle'
+// import Greeting from './controls/Greeting'
+import LoginControl from './controls/LoginControl'
 
 class App extends React.Component{
 
@@ -30,6 +32,7 @@ class App extends React.Component{
   }
 
   render(){
+    
     const ele2 = (
       <div>
         <h1>Hello World!</h1>
@@ -41,6 +44,7 @@ class App extends React.Component{
         <hr />
         <Clock />
         <Toggle />
+        <LoginControl />
       </div>
     )
 
