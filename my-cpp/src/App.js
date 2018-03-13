@@ -10,6 +10,7 @@ import Mailbox from './controls/Mailbox'
 import Page from './controls/Page'
 import NumberList from './controls/NumberList'
 
+import NameForm from './input-controls/NameForm'
 
 class App extends React.Component {
 
@@ -37,8 +38,8 @@ class App extends React.Component {
 
   render() {
 
-    const message = ['React', 'Re: React','Re:Re: React']
-    const numbers = [1,2,3,4,5]
+    const message = ['React', 'Re: React', 'Re:Re: React']
+    const numbers = [1, 2, 3, 4, 5]
 
     const ele2 = (
       <div>
@@ -53,8 +54,9 @@ class App extends React.Component {
         <Toggle/>
         <LoginControl/>
         <Mailbox unreadMessage={message}/>
-        <Page />
+        <Page/>
         <NumberList numbers={numbers}/>
+        <NameForm />
       </div>
     )
 
