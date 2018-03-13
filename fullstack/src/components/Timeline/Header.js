@@ -29,9 +29,9 @@ class Header extends React.Component {
         return (
             <div style={wrapperStyle} className="header">
                 <div className="menuIcon">
-                    <div className="dashTop" style={menuColor}/>
-                    <div className="dashBottom" style={menuColor}/>
-                    <div className="circle" style={menuColor}/>
+                    <div className="dashTop" style={menuColor}></div>
+                    <div className="dashBottom" style={menuColor}></div>
+                    <div className="circle" style={menuColor}></div>
                 </div>
 
                 <div className="fa fa-more"/>
