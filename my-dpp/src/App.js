@@ -5,9 +5,15 @@ import './App.css';
 import {Header} from './components/Header'
 import {Content} from './components/Content'
 
+import 'whatwg-fetch'
+//import ctime from './promise/Time'
+
+//stateful App version
 class App extends Component {
   render() {
-    return (
+    //ctime()
+
+    return (  
       <div class="App">
         <Header/>
         <Content/>
