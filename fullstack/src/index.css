@@ -5,3 +5,42 @@
 .header, .fa, .title, .searchIcon{
     color: #333333
 }
+
+/*.demo .notificationFrame .header .menuIcon .circle{*/
+.demo .notificationsFrame .header .menuIcon .circle{
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    border-radius: 4px;
+    top: -2px;
+    right: 0;
+    background-color: #B2DAFF;
+    -webkit-transform: all .2s ease-in-out;
+    transform: all .2s ease-in-out;
+}
+
+.demo .notificationsFrame .header .menuIcon .dashTop{
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    top: 0;
+    left: 0;
+    background-color: #B2DAFF;
+    border-radius: 3px;
+    -webkit-transform: all .2s ease-in-out;
+    transform: all .2s ease-in-out;
+}
+
+.demo .notificationsFrame .header .menuIcon .dashBottom{
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    top: 0;
+    left: 0;
+    background-color: #B2DAFF;
+    -webkit-transform: all .2s ease-in-out;
+    transform: all .2s ease-in-out;
+    width: 29px;
+    top: auto;
+    bottom: 0;
+}

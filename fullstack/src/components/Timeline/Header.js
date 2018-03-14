@@ -8,6 +8,12 @@ class Header extends React.Component {
             searchVisible: false
         }
     }
+
+    showSearch(){
+        this.setState({
+            searchVisible: !this.state.searchVisible
+        })
+    }
     render() {
 
         const searchInputClass = ["searchInput"];
@@ -43,7 +49,11 @@ class Header extends React.Component {
                     type="text"
                     className={searchInputClass.join(' ')}
                     placeholder="Search ..."/>
-                <div className="fa fa-search searchIcon"></div>
+                <div
+                    onClick={this
+                    .showSearch
+                    .bind(this)}
+                    className="fa fa-search searchIcon"></div>
             </div>
         )
     }
