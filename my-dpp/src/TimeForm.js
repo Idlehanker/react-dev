@@ -71,7 +71,7 @@ class TimeForm extends React.Component {
         return (
             <form onSubmit={this._handleFormSubmit}>
                 <select onChange={this._changeTimeZone} defaultValue={tz}>
-                    {timezones.map(t => {Ç
+                    {timezones.map(t => {
                         return (
                             <option key={t} value={t}>{t}</option>
                         )
