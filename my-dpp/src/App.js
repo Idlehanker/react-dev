@@ -47,6 +47,8 @@ class App extends Component {
   }
 
   handleChange(newState) {
+    console.log('parent triggered!!')
+    console.log('now state value is',newState)
     this.setState(newState)
   }
 

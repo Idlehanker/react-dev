@@ -1,17 +1,27 @@
-import React, {Component} from 'react'
+//import React, {Component} from 'react'
+import React from 'react'
 
 const timezones = ['PST', 'MST', 'MDT', 'EST', 'UTC']
 
-class TimeForm extends Component {
+class TimeForm extends React.Component {
 
     constructor(props) {
         super(props)
-        // this.
+
         this._handleChange = this
             ._handleChange
             .bind(this)
+
         this._handleFormSubmit = this
             ._handleFormSubmit
+            .bind(this)
+
+        this._changeTimeZone = this
+            ._changeTimeZone
+            .bind(this)
+
+        this._changeMsg = this
+            ._changeMsg
             .bind(this)
 
         const {tz, msg} = this.props
@@ -19,9 +29,13 @@ class TimeForm extends Component {
             tz,
             msg
         }
+        
+        console.log('tz=' + tz, 'msg:' + msg)
+        console.log('this is ', this, typeof this)
     }
 
     _handleChange(evt) {
+        console.log('timeZone real change here!')
         typeof this.props.onFormChange === 'function' && this
             .props
             .onFormChange(this.state)
@@ -29,6 +43,9 @@ class TimeForm extends Component {
 
     _changeTimeZone(evt) {
         const tz = evt.target.value
+        console.log('timeZone is changed:' + tz)
+        console.log('this is ', this, typeof this)
+
         this.setState({
             tz
         }, this._handleChange)
@@ -54,7 +71,7 @@ class TimeForm extends Component {
         return (
             <form onSubmit={this._handleFormSubmit}>
                 <select onChange={this._changeTimeZone} defaultValue={tz}>
-                    {timezones.map(t => {
+                    {timezones.map(t => {Ç
                         return (
                             <option key={t} value={t}>{t}</option>
                         )
