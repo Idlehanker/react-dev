@@ -3,7 +3,6 @@ import { getFakeMembers } from './getFakeMembers'
 
 const Member = ({ email, picture, name, location }) =>
 
- 
   <div className='member'>
     <hr/>
     <img src={picture.thumbnail} alt=''/>
