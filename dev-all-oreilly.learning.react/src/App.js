@@ -7,6 +7,8 @@ import './App.css'
 
 import { MemberList } from './network/MemberList'
 import ColorWidget from './color/ColorWidget'
+import CountryList from './country/CountryList' 
+import RandomMeUsers from './hocs/RandomMeUsers'
 
 class App extends Component {
 
@@ -20,8 +22,11 @@ class App extends Component {
 				<p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
 				</p>
-				<MemberList count={5}/>
-				<ColorWidget />
+				{ /*<MemberList count={5}/> */}
+				{ /*<ColorWidget /> */}
+				{ /*<CountryList />*/}
+				<RandomMeUsers count={10}/>
+				
 			</div>
 		)
 	}
