@@ -17,7 +17,8 @@ export class  Color extends Component{
 		return (
 			<section className='color' style={this.style}>
 				<h1 ref='title'>{title}</h1>
-				<div className='color' style={{ backgroundColor: color}}>
+				<div className='color' 
+					style={{ backgroundColor: color}}>
 				</div>
 				<StarRating starsSelected={rating} onRate={onRate}/>
 			</section>

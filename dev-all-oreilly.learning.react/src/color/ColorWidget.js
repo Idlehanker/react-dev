@@ -20,7 +20,7 @@ export default class ColorWidget extends Component{
 	}
 
 	addColor( title, color ) {
-        console.log('')
+		console.log('')
 		this.setState( preState => ({
 			colors: [
 				...preState.colors,
