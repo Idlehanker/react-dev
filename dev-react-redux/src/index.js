@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import store from './redux/store/index';
 
 import { Bpp } from './Bpp';
+import { Cpp } from './Cpp';
 
 /*
 ReactDOM.render(
@@ -16,7 +17,15 @@ ReactDOM.render(
     </Provider>, 
     document.getElementById('root'));
 */
+/*
 ReactDOM.render(
 	<Bpp/>,
 	document.getElementById('root'));
+registerServiceWorker();
+*/
+ReactDOM.render(
+	<Cpp/>,
+	document.getElementById('root')
+);
+
 registerServiceWorker();
