@@ -3,8 +3,11 @@ import React from 'react';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 
+//middleware
 import thunk from 'redux-thunk';
 import { createLogger } from 'redux-logger';
+
+//reducer and container
 import reducer from './redux-simples/async/reducers/index';
 import App from './redux-simples/async/containers/App';
 

@@ -31,7 +31,7 @@ class App extends Component{
     handleChange = nextSubreddit => {
     	this.props.dispatch(selectSubreddit(nextSubreddit));
     }
-
+	
     handleRefreshClick = e => {
     	e.preventDefault();
 
